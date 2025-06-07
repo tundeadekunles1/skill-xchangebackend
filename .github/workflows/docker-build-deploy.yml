@@ -40,3 +40,4 @@ jobs:
           docker stop skillback-docker || true
           docker rm skillback-docker || true
           docker run -d -p 4000:10000 --name skillback-docker ${{ secrets.DOCKER_USERNAME }}/skillback-docker
+          
